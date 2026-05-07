@@ -1,7 +1,7 @@
 # ClarifyVA — Visual Analytics Assistant with Proactive Clarification
 
 ClarifyVA is an uncertainty-aware proactive clarification visual analytics framework that generates Python code for data analysis and proactively identifies uncertain assumptions before execution. 
-This repository currently provides the benchmark construction artifacts and curated benchmark data used to evaluate proactive clarification behavior. Code are being cleaned and will be updated as the project evolves
+This repository currently provides the benchmark construction artifacts and curated benchmark data used to evaluate proactive clarification behavior. Code are being cleaned and will be updated as the project evolves.
 
 ## Data and Artifacts
 Built on top of the public data analysis benchmark InfiAgent / DA-Agent, this project generates executable code, extracts analysis plans, and constructs three types of queries—explicit, ambiguous, and infeasible—to test whether models ask clarifying questions at the right time, ask the right questions, and identify contradictions or invalid constraints in tasks.
@@ -32,7 +32,7 @@ The curated benchmark contains 150 instances:
 | `ambiguous` | 50 | Tests whether the assistant asks useful clarification questions for underspecified requests |
 | `infeasible` | 50 | Tests whether the assistant detects invalid or contradictory requests |
 
-Each benchmark instance is derived from a unique base task. The released input and gold files are separated to avoid ground-truth leakage during evaluation:
+Each benchmark instance is derived from a unique base task.
 
 ## Data Augmentation
 
@@ -94,5 +94,3 @@ For more detailed augmentation instructions, see:
 
 - `benchmark/data_augmentation/README.md`
 - `benchmark/dataset/README.md`
-
-codes will be updated later. 
